@@ -19,27 +19,33 @@ const TodoItem = ({ todo, toggleCompleted }) => {
         onChange={() => toggleCompleted(todo.id)} 
       />
       <p style={getTodoTitleStyle()}>{todo.title}</p>
-    
+      <button style={styles.button} onClick={() => deleteTodo(todo.id)}>x</button>
     </div>
   )
 }
 
 const styles = {
   todoItem: {
-    border: '2px solid #FFE4C4',
+    border: '2px solid #f4f4f4',
     fontSize: '24px',
-    display:'flex',
-    justifyContent: 'center',
+    display: 'flex',
+    justifyContent: 'space-between',
     alignItems: 'center',
+    padding: '0 20px',
   },
-
   checkbox: {
-    marginRight: '10px',
-    heigth: '18px',
+    height: '18px',
     width: '18px',
-
-
-
+  },
+  button: {
+    backgroundColor: '#BB0000',
+    color: '#fff',
+    height: '30px',
+    width: '30px',
+    borderRadius: '100%',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '16px',
   },
 }
 
