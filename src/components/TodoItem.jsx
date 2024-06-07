@@ -26,7 +26,7 @@ const TodoItem = ({ todo, toggleCompleted }) => {
 
 const styles = {
   todoItem: {
-    border: '2px solid #f4f4f4',
+    border: '2px solid #FFEBCD',
     fontSize: '24px',
     display: 'flex',
     justifyContent: 'space-between',
@@ -38,7 +38,7 @@ const styles = {
     width: '18px',
   },
   button: {
-    backgroundColor: '#BB0000',
+    backgroundColor: '#DC143C',
     color: '#fff',
     height: '30px',
     width: '30px',
